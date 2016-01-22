@@ -5,7 +5,6 @@
    <groupId>org.openshift.quickstarts</groupId>
    <artifactId>decisionserver-hellorules</artifactId>
    <version>1.2.0.Final</version>
-   <packaging>jar</packaging>
 
    <name>OpenShift Quickstarts: Decision Server: Hello Rules</name>
    <description>A simple example application demonstrating the use of a business rule.</description>
@@ -26,5 +25,14 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
-
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.kie</groupId>
+          <artifactId>kie-maven-plugin</artifactId>
+          <version>6.3.0.Final-redhat-5</version>
+          <extensions>true</extensions>
+        </plugin>
+      </plugins>
+    </build>
 </project>
