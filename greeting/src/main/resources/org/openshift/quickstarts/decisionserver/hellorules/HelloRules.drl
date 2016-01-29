@@ -13,7 +13,7 @@ rule "greet master"
 end
 rule "greet strangers"
     when
-        person : Person( name != "banana")
+        person : Person( name != "roger")
     then
         String salutation = "Yo, get out of my way " + person.getName();
         insert(new Greeting(salutation));
