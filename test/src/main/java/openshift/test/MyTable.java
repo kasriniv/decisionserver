@@ -9,7 +9,7 @@ public class MyTable implements java.io.Serializable {
     static final long serialVersionUID = 1L;
 
     public MyTable() {
-        //"blalala"
+        //"blalalas"
     }
 
 }
