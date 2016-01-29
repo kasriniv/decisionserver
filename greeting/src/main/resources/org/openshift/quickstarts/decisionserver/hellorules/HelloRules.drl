@@ -12,7 +12,7 @@ rule "greet master"
         System.out.println("********** HelloRules DRL: " + salutation + " **********");
         insert(new Greeting(salutation));
 end
-rule "greet strangers"
+rule "greet strangerss"
     when
         person : Person( name != "rettori")
     then
