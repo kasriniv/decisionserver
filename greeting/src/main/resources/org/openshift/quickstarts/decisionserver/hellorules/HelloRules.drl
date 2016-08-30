@@ -8,7 +8,7 @@ rule "greet master"
     when
         person : Person( name == "rettori")
     then
-        String salutation = "Hello " + person.getName() + "! kavitha push to local openshift4!";
+        String salutation = "Hello " + person.getName() + "! Push to OSE 5!";
         insert(new Greeting(salutation));
 end
 rule "greet strangers"
