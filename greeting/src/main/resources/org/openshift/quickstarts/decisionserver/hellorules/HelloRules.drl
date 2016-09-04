@@ -8,7 +8,7 @@ rule "greet master"
     when
         person : Person( name == "rettori")
     then
-        String salutation = "Hello " + person.getName() + "! Both trial1!";
+        String salutation = "Hello " + person.getName() + "! ultrahook test1";
         insert(new Greeting(salutation));
 end
 rule "greet strangers"
