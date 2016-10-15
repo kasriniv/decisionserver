@@ -8,13 +8,13 @@ rule "greet master"
     when
         person : Person( name == "rettori")
     then
-        String salutation = "Hello " + person.getName() + "! testing for OSE33 CICD pipeline : Trial 2 by....Geeereeee";
+        String salutation = "Hello " + person.getName() + "! testing for OSE33 CICD pipeline : Trial 3 by....Geeereeee33333333";
         insert(new Greeting(salutation));
 end
 rule "greet strangers"
     when
         person : Person( name != "rettori")
     then
-        String salutation = "hi there, trial with Giri, testing githook, get out of my way " + person.getName();
+        String salutation = "hi there, trial with Giri, testing githook, get out of my way OSE I have arrived " + person.getName();
         insert(new Greeting(salutation));
 end
