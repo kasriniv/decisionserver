@@ -8,7 +8,7 @@ rule "greet master"
     when
         person : Person( name == "rettori")
     then
-        String salutation = "Hello " + person.getName() + "! testing for OSE33 CICD pipeline : Trial 3 by....Geeereeee33333333";
+        String salutation = "Hello " + person.getName() + "! Jenkins github testing for OSE33 CICD pipeline : Trial 3 by....Geeereeee33333333";
         insert(new Greeting(salutation));
 end
 rule "greet strangers"
